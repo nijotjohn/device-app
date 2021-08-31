@@ -1,0 +1,36 @@
+@import "../../../../../../node_modules/bootstrap/scss/mixins";
+.device-list-item{
+  
+  @include clearfix();
+
+  &__img-wrap,
+  &__info-wrap,
+  &__id,
+  &__model,
+  &__possession{
+    float: left;
+  }
+
+  &__info-wrap{
+    @include clearfix();
+    width: calc(100% - 90px);
+  }
+
+  &__img-wrap,
+  &__id,
+  &__model{
+    padding-right: 10px;
+  }
+
+  &__img-wrap{
+    width: 90px;
+  }
+
+  &__id{
+    width: 150px;
+  }
+  &__model,
+  &__possession{
+    width: calc( calc(100% - 150px) / 2);
+  }
+}

@@ -1,0 +1,17 @@
+.header{
+  background: #eee;
+  height: 100px;
+  // padding: 30px 0;
+  &__logo{
+    display: block;
+    height: 80px;
+  }
+  &__logo-text{
+    margin: 0;
+    padding: 0;
+    position: relative;
+    top:-10px;
+    left: 10px;
+    font-weight: bold;
+  }
+}
